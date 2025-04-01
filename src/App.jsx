@@ -42,7 +42,7 @@ export default function App() {
   return (
     <div className="p-[20px]">
       <h2 className="text-[40px] text-gray-600">MovieLand</h2>
-      <MovieSearch setTitle={setTitle} setType={setType} />
+      <MovieSearch setTitle={setTitle} setType={setType} setPage={setPage} />
       <MovieType type={type} setType={setType} setPage={setPage} />
       <MovieList movies={movies} />
       {/* 데이터 있을때만 페이지네이션 나옴 */}

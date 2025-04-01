@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-export default function MovieSearch({ setTitle, setType }) {
+export default function MovieSearch({ setTitle, setType, setPage }) {
   const inputRef = useRef(null);
 
   function handleSearch(e) {
@@ -9,6 +9,7 @@ export default function MovieSearch({ setTitle, setType }) {
     // 검색필드에 값이 있을때만 검색되게, 빈칸제거
     if (inputRef.current.value.trim()) {
       setType('');
+      setPage(1);
       // 일회성 value는 state 사용안함
       setTitle(inputRef.current.value);
     }
