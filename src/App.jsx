@@ -33,7 +33,7 @@ export default function App() {
         setMovies(sortData);
         setTotalPage(Math.ceil(data.totalResults / 10));
       } catch (err) {
-        console.error('데이터전송오류', err);
+        console.error('데이터오류', err);
       }
     }
     searchMovies();
