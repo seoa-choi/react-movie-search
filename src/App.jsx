@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 // ?파라메터=값&파라메터=값, 쿼리스트링을 통해 서버로 데이터 전송,get방식으로 데이터 요청 시 사용
 // (form, 글 작성등은 객체형태로 post방식으로 보냄)
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=825452c7';
+const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=825452c7';
 
 export default function App() {
   const [movies, setMovies] = useState([]);
